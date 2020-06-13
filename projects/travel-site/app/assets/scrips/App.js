@@ -1,1 +1,0 @@
-import '../styles/slyles.css'
