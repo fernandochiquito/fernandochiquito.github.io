@@ -1,0 +1,30 @@
+$small: 530px;
+$medium: 800px;
+$large: 1010px;
+
+@mixin atSmall {
+    @media screen and (min-width: $small) {
+        @content;        
+    }
+}
+
+@mixin atMedium {
+    @media screen and (min-width: $medium) {
+        @content;        
+    }
+}
+
+@mixin atLarge {
+    @media screen and (min-width: $large) {
+        @content;        
+    }
+}
+
+//----- Float Clear -------
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }    
+}
