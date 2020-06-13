@@ -13,8 +13,12 @@ html {
 }
 
 body {
-  color: #2f2f2f;
-  font-family: Open Sans Regular, sans-serif;
+  color: $mainGray;
+  font-family: "Lato", sans-serif;
+}
+
+section {
+  padding: 80px 0;
 }
 
 a {

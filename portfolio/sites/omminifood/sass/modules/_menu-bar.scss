@@ -1,0 +1,30 @@
+.menu-bar {
+  
+  &__itens {
+      color: white;
+      float: right;
+      margin-top: 50px;
+      text-transform: uppercase;
+
+      li {
+          color: white;
+          display: inline-block;
+          font-size: 1.15rem;
+          font-weight: 300;
+          margin-left: 45px;
+
+          a:link,
+          a:visited {
+              border-bottom: 2px solid transparent;
+              color: white;
+              padding: 10px 0;
+              transition: border-bottom 0.2s;
+          }
+
+          a:hover,
+          a:active {
+            border-bottom: 2px solid $mainOrange;
+          }
+      }
+  }
+}

@@ -1,0 +1,29 @@
+.site-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/portfolio/sites/omminifood/img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+
+    &__content {
+        position: absolute;
+        top: 40%;
+    }
+
+    &__title {
+        color: white;
+        font-weight: 300;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        word-spacing: 4px;
+    }
+
+    &__logo {
+        float: left;
+        height: 100px;
+        width: auto;
+        margin-top: 20px;
+    }
+}

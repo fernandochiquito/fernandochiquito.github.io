@@ -1,0 +1,33 @@
+.btn {
+  &:link,
+  &:visited {
+    border: 1px solid $mainOrange;
+    border-radius: 200px;
+    color: $mainOrange;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-right: 20px;
+    padding: 15px 30px;
+    transition: all 0.2s;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $mainOrange;
+    color: white;
+  }
+
+  &--orange {
+    &:link,
+    &:visited {
+      background-color: $mainOrange;
+      color: white;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $mainOrangeDark;
+    }
+  }
+}
