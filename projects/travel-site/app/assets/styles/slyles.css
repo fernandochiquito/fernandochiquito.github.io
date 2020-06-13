@@ -1,2 +1,14 @@
-@import url(/home/fernando/Estudo/Web Development/fernandochiquito.github.io/projects/travel-site/node_modules/normalize.css/normalize.css);
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.large-hero {
+  position: relative;
+}
 /*# sourceMappingURL=slyles.css.map */
