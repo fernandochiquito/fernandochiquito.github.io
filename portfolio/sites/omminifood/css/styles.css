@@ -48,6 +48,23 @@ ul {
   padding-right: 0;
 }
 
+.row {
+  padding-top: 3.75rem;
+}
+
+.row--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row__card-4 {
+  width: 20%;
+}
+
 .row::after {
   content: "";
   clear: both;
@@ -150,10 +167,56 @@ ion-icon {
   margin-top: 15px;
 }
 
-.features__title {
+.page-section--flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-section--flex-medium-4 {
+  width: 20%;
+}
+
+.page-section__title {
   font-size: 2.25rem;
   font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.page-section__hr {
+  margin: 30px auto;
+  border: 1px solid #e67e22;
+  width: 100px;
+}
+
+.page-section__description {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.8125rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.features-card {
+  margin-top: 80px;
+}
+
+.features-card__title {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+.features-card__description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+.page-section {
+    &--flex{
+        justify-content: space-between;
+        display: flex;
+
+        &-medium-4 {
+            width: 20%;
+        }
+    }
+    &__title {
+        font-size: 2.25rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__hr {
+        margin: 30px auto;
+        border: 1px solid $mainOrange;
+        width: 100px;
+    }
+
+    &__description {
+        font-size: 1.25rem;
+        font-weight: 300;
+        line-height: 1.8125rem;
+        margin: 0 auto;
+        width: 70%;
+    }
+}

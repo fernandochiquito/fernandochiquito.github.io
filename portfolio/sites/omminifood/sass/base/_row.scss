@@ -1,3 +1,21 @@
 .row {
+
+    padding-top: 3.75rem;
+
+    &--flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card-4 {
+        width: 20%;
+    }
+
     @include clearfix;
+
+    @include atMedium {
+        &__medium-3 {
+
+        }
+    }
 }
