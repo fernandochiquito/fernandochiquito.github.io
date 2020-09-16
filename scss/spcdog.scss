@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+  background-color: #fff;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.soon{
+    background-attachment: fixed;
+    background-image: linear-gradient(#00000088, #00000088), url(../img/IMG_2147-min.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1{
+        font-size: 3.7rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: 2rem;
+        letter-spacing: 0.61rem;
+    }
+    span{
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 1148px){
+    section {
+        padding: 1Ajustmen0px 0;
+    }
+    .soon {
+        background-position: center right;
+    }
+    .hero {
+        width: 80%;
+        margin-left: 30px;
+        h1{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    section {
+        padding: 0;
+    }
+    .soon {
+        background-position: top right;
+    }
+    .hero {
+        width: 100%;
+        margin-left: 0;
+        h1{
+            font-size: 2.7rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        h2{
+            font-size: 1rem;
+            letter-spacing: 0.61rem;
+        }
+        span{
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    section {
+        padding: 10px 0;
+    }
+    .soon {
+        background-position: center;
+    }
+    .hero {
+        h1{
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+        h2{
+            font-size: 1rem;
+            letter-spacing: 0.4rem;
+        }
+        span{
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px){7
+    section {
+        padding: 5px 0;
+    }
+    .soon {
+        background-position: top right;
+    }
+    .hero {
+        h1{
+            font-size: 1.7rem;
+            text-transform: uppercase;
+        }
+        h2{
+            font-size: 1rem;
+            letter-spacing: 0.25rem;
+        }
+        span{
+            letter-spacing: 0.2rem;
+            text-transform: uppercase;
+        }
+    }
+
+}
