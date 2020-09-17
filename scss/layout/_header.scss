@@ -1,0 +1,55 @@
+.header {
+  position: relative;
+  height: 92vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($colorMidnightBlue, 0.9),
+      rgba($colorWetAsphalt, 0.5)
+    ),
+    url(../../img/IMG_2147-min.jpeg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+
+  img {
+    max-width: 15rem;
+    height: auto;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__content {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+
+  &__title {
+    color: $colorCloud;
+    display: block;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &__subtitle {
+    color: $colorCloud;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1.2rem;
+    margin-bottom: 4.5rem;
+    animation: moveInRight 1s ease-out;
+  }
+
+  &__btn {
+    text-align: center;
+  }
+}
