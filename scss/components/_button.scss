@@ -22,3 +22,28 @@
     box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
   }
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $colorBelizeHole;
+    display: inline-block;
+    font-size: $default-font-size;
+    border-bottom: 1px solid $colorBelizeHole;
+    padding: 3px;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $colorBelizeHole;
+    color: white;
+    box-shadow: 0 1rem 2rem rgba($colorMidnightBlue, 0.2);
+    transform: translateY(-2px);
+  }
+
+  &:active{
+    box-shadow: 0 .5rem 1rem rgba($colorMidnightBlue, 0.2);
+    transform: translateY(0px);
+
+  }
+}
