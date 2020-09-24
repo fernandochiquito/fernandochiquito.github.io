@@ -3,3 +3,27 @@
     padding: 25rem 0;
     margin-top: -17vh;
 }
+
+.section-features {
+    padding: 20rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($colorMidnightBlue, 0.9),
+        rgba($colorWetAsphalt, 0.5)
+      ),
+      url(../../img/IMG_2147-min.jpeg);
+      background-size: cover;
+      transform: skewY(-6deg);
+      margin-top: -7rem;
+
+      & > * {
+          transform: skewY(6deg);
+      }
+  
+}
+
+.section-tours {
+    background-color: $colorCloud;
+    padding: 25rem 0 50rem 0;
+    margin-top: -23vh;
+}
