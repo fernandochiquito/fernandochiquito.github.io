@@ -4,7 +4,7 @@
   height: 51rem;
 
   &__side {
-    color: lavender;
+    color: $colorAsbestos;
     height: 51rem;
     transition: all 0.8s ease;
     position: absolute;
@@ -30,6 +30,22 @@
           $colorWetAsphalt
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorSunFlower,
+          $colorPumpkin
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $colorTurquoise,
+          $colorNephritis
+        );
+      }
     }
   }
 
@@ -40,12 +56,14 @@
     transform: rotateY(0deg);
   }
 
-  // Front side styling
+  // Frontside styling
   &__picture {
     background-size: cover;
     height: 23rem;
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 
     &--1 {
       background-image: linear-gradient(
@@ -57,11 +75,19 @@
     }
 
     &--2 {
-      background-image: url(../../img/nat-5.jpg);
+      background-image: linear-gradient(
+        to right bottom,
+        $colorSunFlower,
+        $colorPumpkin
+      ),url(../../img/nat-6.jpg);
     }
 
     &--3 {
-      background-image: url(../../img/nat-5.jpg);
+      background-image: linear-gradient(
+        to right bottom,
+        $colorTurquoise,
+        $colorNephritis
+      ),url(../../img/nat-7.jpg);
     }
   }
 
@@ -88,6 +114,22 @@
         rgba($colorWetAsphalt, 0.8)
       );
     }
+
+    &--2 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($colorSunFlower, 0.8),
+        rgba($colorPumpkin, 0.8)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba($colorTurquoise, 0.8),
+        rgba($colorNephritis, 0.8)
+      );
+    }
   }
 
   &__details {
@@ -109,5 +151,31 @@
 
         }
       }
+  }
+  // Backside Styling
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__price-box{
+    text-align: center;
+    margin-bottom: 7rem;
+    color: $colorCloud;
+
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }
