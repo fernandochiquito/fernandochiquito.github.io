@@ -5,3 +5,14 @@
     clear: both;
   }
 }
+
+@mixin shadow {
+  box-shadow: 0 1.5rem 4rem rgba($color: $colorMidnightBlue, $alpha: .25);
+}
+
+@mixin position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
