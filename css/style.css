@@ -657,4 +657,19 @@ body {
 .section-stories {
   padding: 15rem 0;
 }
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#34495e), to(#2c3e50));
+  background-image: linear-gradient(to right bottom, #34495e, #2c3e50);
+}
+
+.contact {
+  background-image: linear-gradient(105deg, rgba(236, 240, 241, 0.9) 0%, rgba(236, 240, 241, 0.9) 50%, transparent 50%), url(/img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(44, 62, 80, 0.25);
+          box-shadow: 0 1.5rem 4rem rgba(44, 62, 80, 0.25);
+  height: 50rem;
+}
 /*# sourceMappingURL=style.css.map */
