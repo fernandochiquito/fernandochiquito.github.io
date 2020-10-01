@@ -246,7 +246,7 @@ body {
 
 .feature-box__icon {
   font-size: 6rem;
-  margin-bottom: .5rem;
+  margin-bottom: 3rem;
   background-image: linear-gradient(to bottom right, #2980b9, #34495e);
   display: inline-block;
   -webkit-background-clip: text;
