@@ -18,6 +18,7 @@
         background-image: linear-gradient(to bottom right, $colorBelizeHole, $colorWetAsphalt);
         display: inline-block;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
     
     }
