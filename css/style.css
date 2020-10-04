@@ -116,27 +116,27 @@ body {
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-mb-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-mb-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-mb-small {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .u-mt-big {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 
 .u-mt-huge {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 
 .btn {
@@ -147,6 +147,8 @@ body {
   text-align: center;
   border-radius: 10rem;
   transition: all 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -164,8 +166,9 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn:active, .btn:focus {
   transform: translateY(-0.1rem);
+  outline: none;
   box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
 }
 
@@ -449,6 +452,99 @@ body {
   filter: blur(3px) brightness(80%);
 }
 
+.contact__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.contact__radio-input {
+  display: none;
+}
+
+.contact__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(236, 240, 241, 0.7);
+  border: none;
+  border-bottom: 3px solid transparent;
+  display: block;
+  width: 80%;
+  transition: all .3s;
+}
+
+.contact__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(44, 62, 80, 0.3);
+  border-bottom: 3px solid #2c3e50;
+}
+
+.contact__input:focus:invalid {
+  border-bottom: 3px solid #d35400;
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: rgba(44, 62, 80, 0.5);
+}
+
+.contact__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s;
+}
+
+.contact__input:placeholder-shown + .contact__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}
+
+.contact__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+
+.contact__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.contact__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #2980b9;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -.5rem;
+}
+
+.contact__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2980b9;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.contact__radio-input:checked ~ .contact__radio-label .contact__radio-button::after {
+  opacity: 1;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -569,5 +665,10 @@ body {
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(44, 62, 80, 0.25);
   height: 50rem;
+}
+
+.contact__form {
+  width: 50%;
+  padding: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
