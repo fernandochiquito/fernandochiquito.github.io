@@ -1,12 +1,19 @@
 .btn {
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  text-align: center;
-  border-radius: 10rem;
-  transition: all 0.2s;
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10rem;
+    transition: all 0.2s;
 
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
   &--white {
     color: $colorMidnightBlue;
     background-color: $colorCloud;
@@ -22,7 +29,9 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
   }
@@ -36,7 +45,7 @@
     font-size: $default-font-size;
     border-bottom: 1px solid $colorBelizeHole;
     padding: 3px;
-    transition: all .2s;
+    transition: all 0.2s;
   }
 
   &:hover {
@@ -46,9 +55,8 @@
     transform: translateY(-2px);
   }
 
-  &:active{
-    box-shadow: 0 .5rem 1rem rgba($colorMidnightBlue, 0.2);
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($colorMidnightBlue, 0.2);
     transform: translateY(0px);
-
   }
 }

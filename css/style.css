@@ -162,30 +162,30 @@ body {
 }
 
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 .u-mb-big {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-mb-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-mb-small {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
 .u-mt-big {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
 
 .u-mt-huge {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
 
-.btn {
+.btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   font-size: 1.3rem;
   padding: 1.5rem 4rem;
@@ -194,6 +194,8 @@ body {
   border-radius: 10rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -213,7 +215,8 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn:active, .btn:focus {
+  outline: none;
   -webkit-transform: translateY(-0.1rem);
           transform: translateY(-0.1rem);
   -webkit-box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.2);
@@ -226,8 +229,8 @@ body {
   font-size: 1.6rem;
   border-bottom: 1px solid #2980b9;
   padding: 3px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .btn-text:hover {
@@ -595,6 +598,54 @@ body {
   visibility: hidden;
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
+}
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 4.55rem;
+}
+
+.form__radio-button {
+  height: 3rem;
+  width: 3rem;
+  border: 5px solid #2980b9;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: -0.4rem;
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #2980b9;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
+  opacity: 1;
 }
 
 .row {
